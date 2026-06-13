@@ -303,7 +303,7 @@ section { padding: 80px 0; }
     height: 28px;
 }
 
-.f-text h4 { 
+.f-text h3 { 
     color: #2b3643; 
     font-size: 16px; 
     margin-bottom: 8px; 
@@ -323,7 +323,7 @@ section { padding: 80px 0; }
 .client-info { display: flex; align-items: center; gap: 15px; }
 .client-info img, .client-avatar-placeholder { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
 .client-avatar-placeholder { background: #fff; }
-.client-info h4 { font-size: 16px; margin: 0; color: #fff; }
+.client-info h3 { font-size: 16px; margin: 0; color: #fff; }
 .client-info span { font-size: 12px; opacity: 0.8; }
 
 
