@@ -1,6 +1,4 @@
-/* =========================================
-   Базові налаштування
-   ========================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -54,9 +52,7 @@ section { padding: 80px 0; }
 .subtitle { color: #aeb9c3; }
 .subtitle-blue { color: #6a9df5; }
 
-/* =========================================
-   Кнопки
-   ========================================= */
+
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -74,7 +70,6 @@ section { padding: 80px 0; }
 .btn-outline { border: 2px solid #fff; color: #fff; background: transparent; }
 .btn-blue { background: #6a9df5; color: #fff; }
 
-/* Спеціальні кнопки для головного екрану */
 .hero-buttons .btn-primary { 
     background: linear-gradient(to right, #1de9b6, #1dc4e9); 
     box-shadow: 0 10px 20px rgba(29, 233, 182, 0.4); 
@@ -84,9 +79,7 @@ section { padding: 80px 0; }
     box-shadow: 0 10px 20px rgba(68, 129, 235, 0.4); 
 }
 
-/* =========================================
-   Шапка (Header)
-   ========================================= */
+
 .header {
     position: absolute; 
     width: 100%; 
@@ -124,9 +117,6 @@ section { padding: 80px 0; }
 }
 .header .btn-outline:hover { background: #f8f9fa; }
 
-/* =========================================
-   Головний екран (Hero)
-   ========================================= */
 .hero {
     background: linear-gradient(135deg, #f77062 0%, #fe5196 40%, #b050f2 100%);
     min-height: 750px;
@@ -171,9 +161,6 @@ section { padding: 80px 0; }
     display: block;
 }
 
-/* =========================================
-   Пошук домену
-   ========================================= */
 .domain-search { background-color: #2b3643; padding: 60px 0; }
 .domain-inner { display: flex; justify-content: space-between; align-items: center; gap: 30px; }
 .domain-text { flex: 1; }
@@ -186,9 +173,6 @@ section { padding: 80px 0; }
 .domain-prices { display: flex; gap: 15px; font-size: 13px; color: #fff; }
 .domain-prices .tld { color: #6a9df5; }
 
-/* =========================================
-   Гарантії
-   ========================================= */
 .guarantee { background: #f8f9fa; }
 .grid-3x2 {
     display: grid;
@@ -206,18 +190,14 @@ section { padding: 80px 0; }
 .green-icon { background: #28d57f; }
 .feature-card h3 { color: #2b3643; font-size: 18px; margin-bottom: 15px; }
 
-/* =========================================
-   Статистика
-   ========================================= */
+
 .stats { background: linear-gradient(135deg, #f9629f 0%, #8b45f7 100%); text-align: center; color: #fff; }
 .stats-subtitle { font-size: 12px; letter-spacing: 2px; opacity: 0.8; margin-bottom: 30px; }
 .stats-inner { display: flex; justify-content: space-around; }
 .stat-number { display: block; font-size: 40px; font-weight: bold; margin-bottom: 5px; }
 .stat-label { font-size: 14px; opacity: 0.9; }
 
-/* =========================================
-   Тарифи (Pricing)
-   ========================================= */
+
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -237,9 +217,7 @@ section { padding: 80px 0; }
 .price-features li:last-child { border: none; }
 .price-features strong { color: #2b3643; }
 
-/* =========================================
-   Чому ми (Why Choose Us)
-   ========================================= */
+
 .why-choose-us { 
     background: #fff; 
     padding: 100px 0; 
@@ -253,7 +231,7 @@ section { padding: 80px 0; }
 
 .choose-media { 
     flex: 1; 
-    background: #bcbcbc; /* Сірий фон з макету */
+    background: #bcbcbc; 
     height: 600px; 
     position: relative; 
     display: flex;
@@ -274,7 +252,7 @@ section { padding: 80px 0; }
 }
 
 .choose-title {
-    color: #6a9df5; /* Синій заголовок з макету */
+    color: #6a9df5; 
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -301,11 +279,11 @@ section { padding: 80px 0; }
 }
 
 .item-left {
-    text-align: right; /* Текст притиснутий до іконки справа */
+    text-align: right; 
 }
 
 .item-right {
-    text-align: left; /* Текст притиснутий до іконки зліва */
+    text-align: left; 
 }
 
 .icon-blue { 
@@ -336,9 +314,7 @@ section { padding: 80px 0; }
     font-size: 13px;
     line-height: 1.6;
 }
-/* =========================================
-   Відгуки
-   ========================================= */
+
 .testimonials { background: linear-gradient(135deg, #6bb3f8 0%, #538cf6 100%); color: #fff; }
 .testimonials .section-title h2 { color: #fff; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
@@ -350,9 +326,7 @@ section { padding: 80px 0; }
 .client-info h4 { font-size: 16px; margin: 0; color: #fff; }
 .client-info span { font-size: 12px; opacity: 0.8; }
 
-/* =========================================
-   Як це працює (How it works)
-   ========================================= */
+
 .tabs-nav-center { display: flex; justify-content: center; gap: 15px; margin-bottom: 50px; }
 .tab-pill { padding: 10px 25px; border-radius: 30px; border: 1px solid #6a9df5; background: transparent; color: #6a9df5; cursor: pointer; }
 .tab-pill.active { background: #28d57f; color: #fff; border-color: #28d57f; }
@@ -361,9 +335,7 @@ section { padding: 80px 0; }
 .how-text h3 { color: #2b3643; font-size: 24px; margin-bottom: 20px; }
 .how-text p { margin-bottom: 15px; }
 
-/* =========================================
-   Клієнти
-   ========================================= */
+
 .clients { background: #2b3643; text-align: center; color: #fff; }
 .clients-title { font-size: 32px; margin-bottom: 10px; }
 .clients-desc { opacity: 0.7; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
@@ -371,17 +343,13 @@ section { padding: 80px 0; }
 .clients-inner img { opacity: 0.6; transition: 0.3s; max-width: 120px; }
 .clients-inner img:hover { opacity: 1; }
 
-/* =========================================
-   Блог
-   ========================================= */
+
 .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .blog-card img { width: 100%; height: 250px; object-fit: cover; margin-bottom: 15px; }
 .blog-meta { font-size: 12px; margin-bottom: 10px; }
 .blog-card h3 { color: #2b3643; font-size: 18px; }
 
-/* =========================================
-   Підвал (Footer) та Соціальні іконки
-   ========================================= */
+
 .footer { background: #2b3643; color: #8a99a8; padding: 60px 0 20px; }
 .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
 .footer-logo { font-size: 24px; color: #fff; font-weight: bold; display: block; margin-bottom: 20px; }
@@ -404,9 +372,7 @@ section { padding: 80px 0; }
 }
 .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
 
-/* =========================================
-   Модальне вікно та Кнопка "Вгору"
-   ========================================= */
+
 .modal-overlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.7); display: none;
@@ -434,9 +400,7 @@ section { padding: 80px 0; }
 }
 .scroll-to-top:hover { transform: translateY(-5px); }
 
-/* =========================================
-   Внутрішні сторінки (Page Hero)
-   ========================================= */
+
 .page-hero {
     background: linear-gradient(135deg, #f9629f 0%, #8b45f7 100%);
     padding: 150px 0 80px; text-align: center; color: #fff;
@@ -445,9 +409,7 @@ section { padding: 80px 0; }
 .breadcrumbs, .breadcrumbs a { color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 15px; }
 .breadcrumbs a:hover { color: #fff; text-decoration: underline; }
 
-/* =========================================
-   Сторінка "Про нас" (About / Команда)
-   ========================================= */
+
 .about-info { background: #ffffff; }
 .info-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
 .info-image img { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
@@ -464,9 +426,7 @@ section { padding: 80px 0; }
 .team-card img { width: 100%; border-radius: 0; margin-bottom: 20px; }
 .team-card p { font-size: 14px; color: #8a99a8; }
 
-/* =========================================
-   Сторінка "Хостинг" (Hosting)
-   ========================================= */
+
 .steps-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
 .step-card h3 { margin: 20px 0 15px; color: #2b3643; }
 .step-card p { color: #8a99a8; }
@@ -486,9 +446,7 @@ section { padding: 80px 0; }
 .faq-answer { margin-top: 15px; color: #8a99a8; font-size: 14px; line-height: 1.6; }
 .plus-icon { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; background-color: #6a9df5; color: #fff; border-radius: 50%; font-size: 18px; flex-shrink: 0; }
 
-/* =========================================
-   Сторінка "Контакти" (Contact)
-   ========================================= */
+
 .contact-inner { display: grid; grid-template-columns: 3fr 2fr; gap: 50px; }
 .contact-form-block h2, .contact-info-block h2 { color: #2b3643; margin-top: 0; margin-bottom: 30px; }
 .form-group { margin-bottom: 20px; }
@@ -496,17 +454,13 @@ section { padding: 80px 0; }
 .info-details p { margin-bottom: 20px; color: #8a99a8; line-height: 1.8; }
 .info-details strong { color: #2b3643; }
 
-/* =========================================
-   Сторінка 404
-   ========================================= */
+
 .error-page { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: #f8f9fa; }
 .error-code { font-size: 150px; font-weight: bold; color: #28d57f; margin: 0; line-height: 1; }
 .error-content h2 { font-size: 32px; color: #2b3643; margin-bottom: 15px; }
 .error-content p { color: #8a99a8; margin-bottom: 30px; }
 
-/* =========================================
-   Адаптація під ноутбуки
-   ========================================= */
+
 @media (max-width: 1440px) {
     .hero-image {
         width: 900px;
@@ -530,9 +484,7 @@ section { padding: 80px 0; }
     }
 }
 
-/* =========================================
-   Іконки для секції Гарантій (Gradient SVG)
-   ========================================= */
+
 .icon-green-gradient {
     width: 70px;
     height: 70px;
@@ -550,17 +502,14 @@ section { padding: 80px 0; }
     height: 32px;
 }
 
-/* =========================================
-   Гарантії (Сітка 3х2)
-   ========================================= */
+
 .features-grid {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important; /* 3 колонки однакової ширини */
-    gap: 40px; /* Відстань між картками */
+    grid-template-columns: repeat(3, 1fr) !important; 
+    gap: 40px; 
     text-align: center;
 }
 
-/* Якщо в HTML залишився старий клас grid-3x2, дублюємо правило і для нього */
 .grid-3x2 {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -568,13 +517,11 @@ section { padding: 80px 0; }
     text-align: center;
 }
 
-/* =========================================
-   Іконки для Офісу в Футері
-   ========================================= */
+
 .office-item {
     display: flex;
-    align-items: flex-start; /* Вирівнюємо іконку по верхньому краю тексту */
-    gap: 15px; /* Відстань між іконкою та текстом */
+    align-items: flex-start; 
+    gap: 15px; 
     margin-bottom: 5px;
 }
 
@@ -582,18 +529,15 @@ section { padding: 80px 0; }
     width: 18px;
     height: 18px;
     flex-shrink: 0;
-    margin-top: 4px; /* Трохи опускаємо іконку, щоб стояла рівно з лінією тексту */
+    margin-top: 4px; 
 }
 
 .office-item p {
-    margin-bottom: 15px !important; /* Зберігаємо старі відступи між блоками */
+    margin-bottom: 15px !important; 
 }
 
-/* =========================================
-   Оновлення іконок кроків (Хостинг)
-   ========================================= */
 .step-icon-round {
-    background: linear-gradient(135deg, #5fe490 0%, #28d57f 100%); /* Додаємо градієнт */
+    background: linear-gradient(135deg, #5fe490 0%, #28d57f 100%); 
 }
 
 .step-icon-round svg {
@@ -601,7 +545,7 @@ section { padding: 80px 0; }
     height: 35px;
 }
 
-/* Робимо заголовок тарифів синім */
 .pricing-title {
-    color: #6a9df5 !important; /* Синій колір, як у макеті */
+    color: #6a9df5 !important; 
 }
+
