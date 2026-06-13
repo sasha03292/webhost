@@ -1,0 +1,607 @@
+/* =========================================
+   Базові налаштування
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #8a99a8;
+    background-color: #f8f9fa;
+}
+
+a { text-decoration: none; }
+ul { list-style: none; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+section { padding: 80px 0; }
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: #2b3643;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle, .subtitle-blue {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle { color: #aeb9c3; }
+.subtitle-blue { color: #6a9df5; }
+
+/* =========================================
+   Кнопки
+   ========================================= */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary { background: #28d57f; color: #fff; }
+.btn-primary:hover { background: #21b56c; }
+.btn-secondary { background: rgba(255,255,255,0.2); color: #fff; }
+.btn-outline { border: 2px solid #fff; color: #fff; background: transparent; }
+.btn-blue { background: #6a9df5; color: #fff; }
+
+/* Спеціальні кнопки для головного екрану */
+.hero-buttons .btn-primary { 
+    background: linear-gradient(to right, #1de9b6, #1dc4e9); 
+    box-shadow: 0 10px 20px rgba(29, 233, 182, 0.4); 
+}
+.hero-buttons .btn-secondary { 
+    background: linear-gradient(to right, #4481eb, #04befe); 
+    box-shadow: 0 10px 20px rgba(68, 129, 235, 0.4); 
+}
+
+/* =========================================
+   Шапка (Header)
+   ========================================= */
+.header {
+    position: absolute; 
+    width: 100%; 
+    top: 0; 
+    padding: 20px 0; 
+    z-index: 10;
+}
+
+.header-inner { 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #fff; 
+}
+
+.main-nav { 
+    margin-left: auto; 
+    margin-right: 40px; 
+}
+
+.nav-list { display: flex; gap: 30px; }
+.nav-list a { color: rgba(255,255,255,0.8); transition: 0.3s; }
+.nav-list a:hover { color: #fff; }
+
+.header .btn-outline { 
+    background: #fff; 
+    color: #b050f2; 
+    padding: 12px 35px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+}
+.header .btn-outline:hover { background: #f8f9fa; }
+
+/* =========================================
+   Головний екран (Hero)
+   ========================================= */
+.hero {
+    background: linear-gradient(135deg, #f77062 0%, #fe5196 40%, #b050f2 100%);
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero-inner { 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 100%;
+}
+
+.hero-content { 
+    max-width: 520px; 
+    color: #fff; 
+    position: relative; 
+    z-index: 2; 
+    margin-top: -60px;
+}
+
+.hero-content h1 { font-size: 46px; font-weight: 600; line-height: 1.2; margin-bottom: 20px; }
+.hero-content p { font-size: 18px; margin-bottom: 30px; opacity: 0.9; }
+.hero-buttons { display: flex; gap: 15px; }
+
+.hero-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1100px; 
+    z-index: 1;
+    pointer-events: none; 
+}
+
+.hero-image img {
+    width: 80%;
+    max-width: none;
+    display: block;
+}
+
+/* =========================================
+   Пошук домену
+   ========================================= */
+.domain-search { background-color: #2b3643; padding: 60px 0; }
+.domain-inner { display: flex; justify-content: space-between; align-items: center; gap: 30px; }
+.domain-text { flex: 1; }
+.domain-text h2 { color: #fff; font-size: 26px; margin-bottom: 5px; }
+.domain-form-wrapper { flex: 1; max-width: 600px; }
+.domain-form { display: flex; margin-bottom: 15px; }
+.domain-form input { flex: 1; padding: 15px; border: none; border-radius: 4px 0 0 4px; outline: none; }
+.tld-select { padding: 15px; border: none; border-left: 1px solid #eee; outline: none; }
+.btn-search-blue { background: #6a9df5; color: #fff; border: none; padding: 0 30px; border-radius: 0 4px 4px 0; cursor: pointer; }
+.domain-prices { display: flex; gap: 15px; font-size: 13px; color: #fff; }
+.domain-prices .tld { color: #6a9df5; }
+
+/* =========================================
+   Гарантії
+   ========================================= */
+.guarantee { background: #f8f9fa; }
+.grid-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.feature-card {
+    background: #fff; padding: 40px 20px; text-align: center;
+    border-radius: 5px; box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+.icon-container {
+    width: 60px; height: 60px; margin: 0 auto 20px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+}
+.green-icon { background: #28d57f; }
+.feature-card h3 { color: #2b3643; font-size: 18px; margin-bottom: 15px; }
+
+/* =========================================
+   Статистика
+   ========================================= */
+.stats { background: linear-gradient(135deg, #f9629f 0%, #8b45f7 100%); text-align: center; color: #fff; }
+.stats-subtitle { font-size: 12px; letter-spacing: 2px; opacity: 0.8; margin-bottom: 30px; }
+.stats-inner { display: flex; justify-content: space-around; }
+.stat-number { display: block; font-size: 40px; font-weight: bold; margin-bottom: 5px; }
+.stat-label { font-size: 14px; opacity: 0.9; }
+
+/* =========================================
+   Тарифи (Pricing)
+   ========================================= */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+.price-card {
+    background: #fff; padding: 40px 20px; text-align: center; border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.price-card.popular { transform: scale(1.05); border-top: 4px solid #28d57f; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.price-card h3 { color: #2b3643; font-size: 18px; margin-bottom: 15px; }
+.price { font-size: 48px; color: #28d57f; font-weight: bold; margin-bottom: 10px; }
+.price sup { font-size: 24px; vertical-align: top; margin-top: 10px; display: inline-block;}
+.price-period { font-size: 13px; margin-bottom: 25px; }
+.price-features li { margin-bottom: 15px; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.price-features li:last-child { border: none; }
+.price-features strong { color: #2b3643; }
+
+/* =========================================
+   Чому ми (Why Choose Us)
+   ========================================= */
+.why-choose-us { 
+    background: #fff; 
+    padding: 100px 0; 
+}
+
+.choose-inner { 
+    display: flex; 
+    gap: 60px; 
+    align-items: center; 
+}
+
+.choose-media { 
+    flex: 1; 
+    background: #bcbcbc; /* Сірий фон з макету */
+    height: 600px; 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-placeholder .play-btn {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.choose-content { 
+    flex: 1.2; 
+}
+
+.choose-title {
+    color: #6a9df5; /* Синій заголовок з макету */
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.choose-subtitle {
+    font-size: 11px;
+    color: #aeb9c3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.features-grid-custom { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px 20px; 
+}
+
+.f-item { 
+    display: flex; 
+    gap: 20px; 
+    align-items: flex-start; 
+}
+
+.item-left {
+    text-align: right; /* Текст притиснутий до іконки справа */
+}
+
+.item-right {
+    text-align: left; /* Текст притиснутий до іконки зліва */
+}
+
+.icon-blue { 
+    width: 60px; 
+    height: 60px; 
+    background: #6a9df5; 
+    border-radius: 50%; 
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(106, 157, 245, 0.3);
+}
+
+.icon-blue svg {
+    width: 28px;
+    height: 28px;
+}
+
+.f-text h4 { 
+    color: #2b3643; 
+    font-size: 16px; 
+    margin-bottom: 8px; 
+}
+
+.f-text p {
+    color: #8a99a8;
+    font-size: 13px;
+    line-height: 1.6;
+}
+/* =========================================
+   Відгуки
+   ========================================= */
+.testimonials { background: linear-gradient(135deg, #6bb3f8 0%, #538cf6 100%); color: #fff; }
+.testimonials .section-title h2 { color: #fff; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.testimonial-item { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); }
+.testimonial-item p { margin-bottom: 20px; font-style: italic; font-size: 15px; }
+.client-info { display: flex; align-items: center; gap: 15px; }
+.client-info img, .client-avatar-placeholder { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+.client-avatar-placeholder { background: #fff; }
+.client-info h4 { font-size: 16px; margin: 0; color: #fff; }
+.client-info span { font-size: 12px; opacity: 0.8; }
+
+/* =========================================
+   Як це працює (How it works)
+   ========================================= */
+.tabs-nav-center { display: flex; justify-content: center; gap: 15px; margin-bottom: 50px; }
+.tab-pill { padding: 10px 25px; border-radius: 30px; border: 1px solid #6a9df5; background: transparent; color: #6a9df5; cursor: pointer; }
+.tab-pill.active { background: #28d57f; color: #fff; border-color: #28d57f; }
+.how-content { display: flex; gap: 50px; align-items: center; }
+.how-image, .how-text { flex: 1; }
+.how-text h3 { color: #2b3643; font-size: 24px; margin-bottom: 20px; }
+.how-text p { margin-bottom: 15px; }
+
+/* =========================================
+   Клієнти
+   ========================================= */
+.clients { background: #2b3643; text-align: center; color: #fff; }
+.clients-title { font-size: 32px; margin-bottom: 10px; }
+.clients-desc { opacity: 0.7; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.clients-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.clients-inner img { opacity: 0.6; transition: 0.3s; max-width: 120px; }
+.clients-inner img:hover { opacity: 1; }
+
+/* =========================================
+   Блог
+   ========================================= */
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.blog-card img { width: 100%; height: 250px; object-fit: cover; margin-bottom: 15px; }
+.blog-meta { font-size: 12px; margin-bottom: 10px; }
+.blog-card h3 { color: #2b3643; font-size: 18px; }
+
+/* =========================================
+   Підвал (Footer) та Соціальні іконки
+   ========================================= */
+.footer { background: #2b3643; color: #8a99a8; padding: 60px 0 20px; }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+.footer-logo { font-size: 24px; color: #fff; font-weight: bold; display: block; margin-bottom: 20px; }
+.footer-col h4 { color: #fff; margin-bottom: 20px; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul a { color: #8a99a8; }
+.footer-col ul a:hover { color: #28d57f; }
+.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 14px; }
+
+.social-links { display: flex; gap: 15px; margin-top: 25px; }
+.social-icon {
+    display: flex; justify-content: center; align-items: center;
+    width: 45px; height: 45px; border-radius: 50%;
+    background: linear-gradient(135deg, #5fe490 0%, #28d57f 100%);
+    color: white; transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(40, 213, 127, 0.4);
+}
+.social-icon svg { width: 20px; height: 20px; fill: currentColor; }
+
+/* =========================================
+   Модальне вікно та Кнопка "Вгору"
+   ========================================= */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); display: none;
+    justify-content: center; align-items: center; z-index: 1000;
+}
+.modal-content {
+    background-color: #fff; padding: 40px; border-radius: 10px;
+    width: 100%; max-width: 400px; position: relative; text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.modal-content h2 { color: #2b3643; margin-bottom: 20px; }
+.close-btn {
+    position: absolute; top: 10px; right: 20px; font-size: 28px;
+    cursor: pointer; color: #8a99a8; transition: 0.3s;
+}
+.close-btn:hover { color: #2b3643; }
+.modal-content form { display: flex; flex-direction: column; gap: 15px; }
+.modal-content input { padding: 12px 15px; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 15px; }
+
+.scroll-to-top {
+    position: fixed; bottom: 30px; right: 30px; background-color: #28d57f;
+    color: #fff; width: 50px; height: 50px; border-radius: 50%; border: none;
+    font-size: 24px; cursor: pointer; display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 100; transition: transform 0.3s ease;
+}
+.scroll-to-top:hover { transform: translateY(-5px); }
+
+/* =========================================
+   Внутрішні сторінки (Page Hero)
+   ========================================= */
+.page-hero {
+    background: linear-gradient(135deg, #f9629f 0%, #8b45f7 100%);
+    padding: 150px 0 80px; text-align: center; color: #fff;
+}
+.page-hero h1 { font-size: 42px; margin-bottom: 15px; }
+.breadcrumbs, .breadcrumbs a { color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 15px; }
+.breadcrumbs a:hover { color: #fff; text-decoration: underline; }
+
+/* =========================================
+   Сторінка "Про нас" (About / Команда)
+   ========================================= */
+.about-info { background: #ffffff; }
+.info-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.info-image img { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.tabs-nav { display: flex; gap: 15px; margin-bottom: 30px; }
+.tab-btn { padding: 10px 20px; border: 2px solid #ddd; background: transparent; border-radius: 30px; cursor: pointer; font-weight: bold; color: #8a99a8; transition: 0.3s; }
+.tab-btn.active, .tab-btn:hover { border-color: #28d57f; color: #28d57f; }
+.tab-content h2 { color: #2b3643; margin-bottom: 20px; }
+.tab-content p { color: #8a99a8; margin-bottom: 15px; }
+
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left; }
+.team-header { margin-bottom: 20px; }
+.team-header h3 { margin-bottom: 5px; color: #2b3643; font-size: 18px; }
+.team-header .position { color: #8a99a8; font-size: 13px; margin-bottom: 0; }
+.team-card img { width: 100%; border-radius: 0; margin-bottom: 20px; }
+.team-card p { font-size: 14px; color: #8a99a8; }
+
+/* =========================================
+   Сторінка "Хостинг" (Hosting)
+   ========================================= */
+.steps-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
+.step-card h3 { margin: 20px 0 15px; color: #2b3643; }
+.step-card p { color: #8a99a8; }
+
+.step-icon-round {
+    width: 80px; height: 80px; background-color: #28d57f;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(40, 213, 127, 0.3);
+}
+.step-icon-round img { width: 35px; filter: brightness(0) invert(1); }
+
+.faq { background: #ffffff; }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1000px; margin: 0 auto; }
+.faq-column { display: flex; flex-direction: column; gap: 15px; }
+.faq-item { background: #fff; border: 1px solid #eee; padding: 20px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+.faq-question { display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: #2b3643; font-size: 16px; cursor: pointer; }
+.faq-answer { margin-top: 15px; color: #8a99a8; font-size: 14px; line-height: 1.6; }
+.plus-icon { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; background-color: #6a9df5; color: #fff; border-radius: 50%; font-size: 18px; flex-shrink: 0; }
+
+/* =========================================
+   Сторінка "Контакти" (Contact)
+   ========================================= */
+.contact-inner { display: grid; grid-template-columns: 3fr 2fr; gap: 50px; }
+.contact-form-block h2, .contact-info-block h2 { color: #2b3643; margin-top: 0; margin-bottom: 30px; }
+.form-group { margin-bottom: 20px; }
+.form-group input, .form-group textarea { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; font-size: 16px; outline: none; }
+.info-details p { margin-bottom: 20px; color: #8a99a8; line-height: 1.8; }
+.info-details strong { color: #2b3643; }
+
+/* =========================================
+   Сторінка 404
+   ========================================= */
+.error-page { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: #f8f9fa; }
+.error-code { font-size: 150px; font-weight: bold; color: #28d57f; margin: 0; line-height: 1; }
+.error-content h2 { font-size: 32px; color: #2b3643; margin-bottom: 15px; }
+.error-content p { color: #8a99a8; margin-bottom: 30px; }
+
+/* =========================================
+   Адаптація під ноутбуки
+   ========================================= */
+@media (max-width: 1440px) {
+    .hero-image {
+        width: 900px;
+        left: 48%;    
+    }
+    .hero-content {
+        max-width: 480px; 
+    }
+    .hero-content h1 {
+        font-size: 40px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-image {
+        width: 750px; 
+        left: 50%;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+}
+
+/* =========================================
+   Іконки для секції Гарантій (Gradient SVG)
+   ========================================= */
+.icon-green-gradient {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #5fe490 0%, #28d57f 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(40, 213, 127, 0.3);
+}
+
+.icon-green-gradient svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* =========================================
+   Гарантії (Сітка 3х2)
+   ========================================= */
+.features-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* 3 колонки однакової ширини */
+    gap: 40px; /* Відстань між картками */
+    text-align: center;
+}
+
+/* Якщо в HTML залишився старий клас grid-3x2, дублюємо правило і для нього */
+.grid-3x2 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 40px;
+    text-align: center;
+}
+
+/* =========================================
+   Іконки для Офісу в Футері
+   ========================================= */
+.office-item {
+    display: flex;
+    align-items: flex-start; /* Вирівнюємо іконку по верхньому краю тексту */
+    gap: 15px; /* Відстань між іконкою та текстом */
+    margin-bottom: 5px;
+}
+
+.office-item svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 4px; /* Трохи опускаємо іконку, щоб стояла рівно з лінією тексту */
+}
+
+.office-item p {
+    margin-bottom: 15px !important; /* Зберігаємо старі відступи між блоками */
+}
+
+/* =========================================
+   Оновлення іконок кроків (Хостинг)
+   ========================================= */
+.step-icon-round {
+    background: linear-gradient(135deg, #5fe490 0%, #28d57f 100%); /* Додаємо градієнт */
+}
+
+.step-icon-round svg {
+    width: 35px;
+    height: 35px;
+}
+
+/* Робимо заголовок тарифів синім */
+.pricing-title {
+    color: #6a9df5 !important; /* Синій колір, як у макеті */
+}
